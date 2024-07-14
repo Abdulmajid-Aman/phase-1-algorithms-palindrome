@@ -1,13 +1,19 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let reversedWord = word.toLowerCase().split('').reverse().join('')
+  if(reversedWord === word) {
+    return true
+  } else {
+    return false
+  }
 }
 
 /* 
-  Add your pseudocode here
+The isPalindrome function takes a string as an argument and returns true if the string is a palindrome
 */
 
 /*
-  Add written explanation of your solution here
+    Convert the word to lowercase. We will then split the word into seperate letters and reverse it order to see whether it is a palindrome. After reversing join the word. Then we made a comparison to check if it is a palindrome and if it is, it returns true
 */
 
 // You can run `node index.js` to view these console logs
